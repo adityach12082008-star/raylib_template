@@ -4,7 +4,8 @@ function calcOffset(outer, inner) {
 }
 function distanceBetweenTwoPoints(sX, sY, targetX, targetY) {
   return (
-    (targetX - sX) ** 2 +
+    (targetX - sX) ** 2
+    +
     (targetY - sY) ** 2
   ) ** 0.5;
 }

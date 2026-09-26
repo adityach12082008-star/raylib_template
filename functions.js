@@ -1,16 +1,6 @@
 const r = require("raylib");
 
-function calcOffset(outer, inner) {
-  return (outer - inner) / 2;
-}
 
-function distanceBetweenTwoPoints(sX, sY, targetX, targetY) {
-  return (
-    (targetX - sX) ** 2
-    +
-    (targetY - sY) ** 2
-  ) ** 0.5;
-}
 
 function movingHorizontally(xValue, max, min) {
   if (xValue === max) {
@@ -29,8 +19,6 @@ function changeColor(sX, sW, pX, pW) {
 }
 
 module.exports = {
-  calcOffset,
-  distanceBetweenTwoPoints,
   movingHorizontally,
   changeColor,
 };

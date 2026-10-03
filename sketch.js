@@ -87,3 +87,5 @@ module.exports = {
   draw,
   teardown,
 };
+
+let p1;
